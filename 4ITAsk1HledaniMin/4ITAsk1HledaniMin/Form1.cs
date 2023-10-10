@@ -1,3 +1,5 @@
+using System.Linq;
+
 namespace _4ITAsk1HledaniMin
 {
     public partial class Form1 : Form
@@ -18,7 +20,7 @@ namespace _4ITAsk1HledaniMin
                 for (int j = 0; j < herniPole.GetLength(1); j++)
                 {
                     int pocetMin = ZkontrolujSousedy(j,i);
-
+                    herniPole[i, j].NastavPocetMinVOkoli(pocetMin);
                 }
             }
         }
@@ -27,14 +29,20 @@ namespace _4ITAsk1HledaniMin
         {
             int pocetMin = 0;
             //TODO dodìlat kontrolu sousedù a vrátit poèet min
-            /*
-            for (int i = 0; i < ; i++)
+            
+            for (int i = y - 1; i <= y + 1; i++)
             {
-                for (int j = 0; j <; j++)
+                for (int j = x - 1; j <= x + 1; j++)
                 {
+                    if (i < 0 || j < 0 || i > herniPole.GetLength(0) - 1 || j > herniPole.GetLength(1) - 1)
+                        continue;
 
+
+                    if (herniPole[i, j].MaMinu)
+                        pocetMin++;
                 }
-            }*/
+            }
+            return pocetMin;
         }
 
         private void ZaminujPole()
@@ -70,9 +78,59 @@ namespace _4ITAsk1HledaniMin
                     policko = new Policko(j, i);
                     herniPole[i, j] = policko;
                     herniPanel.Controls.Add(policko);
+                    policko.OnPolickoKliknuto += Policko_OnPolickoKliknuto;
+                }
+            }
+        }
+
+        private void Policko_OnPolickoKliknuto(Policko policko)
+        {
+            if (policko.MaMinu)
+                Prohra();
+
+            OdhalPolicko(policko.Y, policko.X);
+            ZkontrolujVyhru();
+        }
+
+        private void ZkontrolujVyhru()
+        {
+            bool vyhral = herniPole.Cast<Policko>().All(policko => policko.JeOdhaleny || policko.MaMinu);
+            if (vyhral)
+            {
+                MessageBox.Show("GG EZ");
+                Application.Restart();
+            }
+        }
+
+        private void OdhalPolicko(int y, int x)
+        {
+            Policko policko = herniPole[y,x];
+            policko.OdhalSe();
+
+            if (!policko.JePrazdny)
+                return;
+
+            for (int i = y - 1; i <= y + 1; i++)
+            {
+                for (int j = x - 1; j <= x + 1; j++)
+                {
+                    if (i < 0 || j < 0 || i > herniPole.GetLength(0) - 1 || j > herniPole.GetLength(1) - 1)
+                        continue;
+
+                    policko = herniPole[i, j];
+
+                    if (!policko.JeOdhaleny)
+                    {
+                        OdhalPolicko(i,j);
+                    }
 
                 }
             }
+        }
+
+        private void Prohra()
+        {
+            //Výpis a vypnutí aplikace
         }
     }
 }

@@ -30,6 +30,7 @@ namespace _4ITAsk1HledaniMin
         private int y;
         public int Y => y;
 
+        public event Action<Policko> OnPolickoKliknuto;
         private Policko()
         {
             InitializeComponent();
@@ -39,6 +40,7 @@ namespace _4ITAsk1HledaniMin
             this.x = x;
             this.y = y;
             this.jeOdhaleny = false;
+            label1.Hide();
 
         }
         public void NastavMinovost()
@@ -49,11 +51,18 @@ namespace _4ITAsk1HledaniMin
         public void NastavPocetMinVOkoli(int pocet)
         {
             this.pocetMinOkolo = pocet;
+            this.label1.Text = pocetMinOkolo.ToString();
         }
 
         private void Policko_MouseClick(object sender, MouseEventArgs e)
         {
+            OnPolickoKliknuto?.Invoke(this);
+        }
 
+        public void OdhalSe()
+        {
+            jeOdhaleny = true;
+            label1.Show();
         }
     }
 }
