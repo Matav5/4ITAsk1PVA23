@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matav\\source\\repos\\4ITAsk1Opak\\4ITAsk1Opak\\4ITAsk1Opak.csproj": {}
+    "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1Opak\\4ITAsk1Opak\\4ITAsk1Opak.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matav\\source\\repos\\4ITAsk1Opak\\4ITAsk1Opak\\4ITAsk1Opak.csproj": {
+    "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1Opak\\4ITAsk1Opak\\4ITAsk1Opak.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\4ITAsk1Opak\\4ITAsk1Opak\\4ITAsk1Opak.csproj",
+        "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1Opak\\4ITAsk1Opak\\4ITAsk1Opak.csproj",
         "projectName": "4ITAsk1Opak",
-        "projectPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk1Opak\\4ITAsk1Opak\\4ITAsk1Opak.csproj",
+        "projectPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1Opak\\4ITAsk1Opak\\4ITAsk1Opak.csproj",
         "packagesPath": "C:\\Users\\Matav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk1Opak\\4ITAsk1Opak\\obj\\",
+        "outputPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1Opak\\4ITAsk1Opak\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matav\\AppData\\Roaming\\NuGet\\NuGet.Config",
