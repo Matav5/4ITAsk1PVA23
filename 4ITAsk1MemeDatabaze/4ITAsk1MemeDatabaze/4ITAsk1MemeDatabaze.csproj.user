@@ -7,6 +7,9 @@
     <Compile Update="Memik.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ObrazkovyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="PridavaciFormular.cs">
       <SubType>Form</SubType>
     </Compile>

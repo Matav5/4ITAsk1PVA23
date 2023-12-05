@@ -19,7 +19,8 @@ namespace _4ITAsk1MemeDatabaze
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UlozMemik();
+            Task ulozMemikTask = new Task(UlozMemik);
+            ulozMemikTask.Start();
         }
 
         private void UlozMemik()
@@ -27,6 +28,7 @@ namespace _4ITAsk1MemeDatabaze
             using (MySqlConnection db = new MySqlConnection("server=localhost;user=root;database=databazememiku"))
             {
                 db.Open();
+                Thread.Sleep(10000);
               //Poslat nějakou Query -> INSERT
                 MySqlCommand prikaz = db.CreateCommand();
                 prikaz.CommandText = $"INSERT INTO memiky(nazev,url) VALUES('{textBox2.Text}', '{textBox1.Text}');";
@@ -35,7 +37,7 @@ namespace _4ITAsk1MemeDatabaze
                 db.Close();
             }
             //Vypnu formulář
-            Close();
+            //Close();
 
         }
 

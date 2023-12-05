@@ -12,21 +12,33 @@ namespace _4ITAsk1MemeDatabaze
                 cas_vytvoreni timestamp DEFAULT NOW()
             );
          */
+        int stranka = 1;
+        Thread nacitaciVlakno = null;
         public Form1()
         {
             InitializeComponent();
             NacteniMemiku();
         }
-
         private void NacteniMemiku()
         {
-            //ne
+            if (nacitaciVlakno != null)
+                return;
 
+
+            nacitaciVlakno = new Thread(NacteniMemikuVeVlakne);
+            nacitaciVlakno.Start();
+            
+        }
+        private void NacteniMemikuVeVlakne()
+        {
+            //ne
+            Invoke( () => flowLayoutPanel1.Controls.Clear());
+            Thread.Sleep(10000);
             using (MySqlConnection db = new MySqlConnection("server=localhost;user=root;database=databazememiku"))
-            {
+            { 
                 db.Open();
                 MySqlCommand prikaz = db.CreateCommand();
-                prikaz.CommandText = "SELECT * FROM memiky;";
+                prikaz.CommandText = $"SELECT * FROM memiky LIMIT {(stranka - 1) * 2}, 2 ;";
                 MySqlDataReader data = prikaz.ExecuteReader();
                 while (data.Read())
                 {
@@ -34,9 +46,38 @@ namespace _4ITAsk1MemeDatabaze
                     string nazev = data.GetString("nazev");
                     string url = data.GetString("url");
                     DateTime casVytvoreni = data.GetDateTime("cas_vytvoreni");
-                    MessageBox.Show(nazev);
+                    Memik memik = new Memik(id,nazev,url,casVytvoreni);
+                    Invoke( () => flowLayoutPanel1.Controls.Add(memik));
+                    memik.OnMemikPrenacti += Memik_OnMemikPrenacti;
                 }
             }
+
+            nacitaciVlakno = null;
+        }
+
+        private void Memik_OnMemikPrenacti(Memik memik)
+        {
+            NacteniMemiku();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PridavaciFormular pridavaciFormular = new PridavaciFormular();
+            pridavaciFormular.ShowDialog();
+            NacteniMemiku();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            stranka--;
+            NacteniMemiku();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            stranka++;
+            NacteniMemiku();
         }
     }
 }

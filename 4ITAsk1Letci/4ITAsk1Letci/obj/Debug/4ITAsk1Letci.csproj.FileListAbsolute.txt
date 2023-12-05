@@ -1,0 +1,13 @@
+C:\Users\Matav\source\repos\4ITAsk1Letci\4ITAsk1Letci\bin\Debug\4ITAsk1Letci.exe.config
+C:\Users\Matav\source\repos\4ITAsk1Letci\4ITAsk1Letci\bin\Debug\4ITAsk1Letci.exe
+C:\Users\Matav\source\repos\4ITAsk1Letci\4ITAsk1Letci\bin\Debug\4ITAsk1Letci.pdb
+C:\Users\Matav\source\repos\4ITAsk1Letci\4ITAsk1Letci\obj\Debug\4ITAsk1Letci.csproj.AssemblyReference.cache
+C:\Users\Matav\source\repos\4ITAsk1Letci\4ITAsk1Letci\obj\Debug\4ITAsk1Letci.csproj.SuggestedBindingRedirects.cache
+C:\Users\Matav\source\repos\4ITAsk1Letci\4ITAsk1Letci\obj\Debug\_4ITAsk1Letci.Form1.resources
+C:\Users\Matav\source\repos\4ITAsk1Letci\4ITAsk1Letci\obj\Debug\_4ITAsk1Letci.Letadlo.resources
+C:\Users\Matav\source\repos\4ITAsk1Letci\4ITAsk1Letci\obj\Debug\_4ITAsk1Letci.Properties.Resources.resources
+C:\Users\Matav\source\repos\4ITAsk1Letci\4ITAsk1Letci\obj\Debug\_4ITAsk1Letci.ZakStribrniku.resources
+C:\Users\Matav\source\repos\4ITAsk1Letci\4ITAsk1Letci\obj\Debug\4ITAsk1Letci.csproj.GenerateResource.cache
+C:\Users\Matav\source\repos\4ITAsk1Letci\4ITAsk1Letci\obj\Debug\4ITAsk1Letci.csproj.CoreCompileInputs.cache
+C:\Users\Matav\source\repos\4ITAsk1Letci\4ITAsk1Letci\obj\Debug\4ITAsk1Letci.exe
+C:\Users\Matav\source\repos\4ITAsk1Letci\4ITAsk1Letci\obj\Debug\4ITAsk1Letci.pdb

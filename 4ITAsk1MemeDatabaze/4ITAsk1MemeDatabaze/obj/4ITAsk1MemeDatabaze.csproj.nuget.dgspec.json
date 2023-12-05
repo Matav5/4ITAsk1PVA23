@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matav\\source\\repos\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze.csproj": {}
+    "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matav\\source\\repos\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze.csproj": {
+    "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze.csproj",
+        "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze.csproj",
         "projectName": "4ITAsk1MemeDatabaze",
-        "projectPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze.csproj",
+        "projectPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze.csproj",
         "packagesPath": "C:\\Users\\Matav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze\\obj\\",
+        "outputPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1MemeDatabaze\\4ITAsk1MemeDatabaze\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matav\\AppData\\Roaming\\NuGet\\NuGet.Config",
