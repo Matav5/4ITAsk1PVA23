@@ -56,15 +56,21 @@ namespace _4ITAsk1Kostky
 
         private void Kostka_MouseClick(object sender, MouseEventArgs e)
         {
-            if (jeOdlozena)
+            if (JeOdlozena)
                 return;
 
-            OnKostkaKliknuto?.Invoke(this);
             JeVybrana = !JeVybrana;
+            OnKostkaKliknuto?.Invoke(this);
         }
         public void Vylosuj()
         {
             Hodnota = Random.Shared.Next(1,7);
+        }
+
+        internal void Odloz()
+        {
+            JeVybrana = false;
+            JeOdlozena = true;
         }
     }
 }
