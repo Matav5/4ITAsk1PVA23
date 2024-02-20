@@ -1,0 +1,7 @@
+C:\Users\Matav\source\repos\4ITAsk1Had\4ITAsk1Had\obj\Debug\net6.0-windows\4ITAsk1Had.csproj.AssemblyReference.cache
+C:\Users\Matav\source\repos\4ITAsk1Had\4ITAsk1Had\obj\Debug\net6.0-windows\_4ITAsk1Had.Hra.resources
+C:\Users\Matav\source\repos\4ITAsk1Had\4ITAsk1Had\obj\Debug\net6.0-windows\4ITAsk1Had.csproj.GenerateResource.cache
+C:\Users\Matav\source\repos\4ITAsk1Had\4ITAsk1Had\obj\Debug\net6.0-windows\4ITAsk1Had.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matav\source\repos\4ITAsk1Had\4ITAsk1Had\obj\Debug\net6.0-windows\4ITAsk1Had.AssemblyInfoInputs.cache
+C:\Users\Matav\source\repos\4ITAsk1Had\4ITAsk1Had\obj\Debug\net6.0-windows\4ITAsk1Had.AssemblyInfo.cs
+C:\Users\Matav\source\repos\4ITAsk1Had\4ITAsk1Had\obj\Debug\net6.0-windows\4ITAsk1Had.csproj.CoreCompileInputs.cache
