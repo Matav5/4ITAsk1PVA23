@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matav\\source\\repos\\4ITAsk1Had\\4ITAsk1Had\\4ITAsk1Had.csproj": {}
+    "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1Had\\4ITAsk1Had\\4ITAsk1Had.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matav\\source\\repos\\4ITAsk1Had\\4ITAsk1Had\\4ITAsk1Had.csproj": {
+    "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1Had\\4ITAsk1Had\\4ITAsk1Had.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\4ITAsk1Had\\4ITAsk1Had\\4ITAsk1Had.csproj",
+        "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1Had\\4ITAsk1Had\\4ITAsk1Had.csproj",
         "projectName": "4ITAsk1Had",
-        "projectPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk1Had\\4ITAsk1Had\\4ITAsk1Had.csproj",
+        "projectPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1Had\\4ITAsk1Had\\4ITAsk1Had.csproj",
         "packagesPath": "C:\\Users\\Matav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk1Had\\4ITAsk1Had\\obj\\",
+        "outputPath": "C:\\Users\\Matav\\source\\repos\\4ITAsk1PVA23\\4ITAsk1Had\\4ITAsk1Had\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matav\\AppData\\Roaming\\NuGet\\NuGet.Config",
